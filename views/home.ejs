@@ -1,0 +1,19 @@
+<%- include("partials/header") -%>
+    <h1>Home</h1>
+    <p>
+        <%= homePara %>
+    </p>
+   <% postings.forEach(function(post){ %>
+    <h2><%= post.title %></h2>
+    <p>
+        <%= post.short %><a href="/posts/<%= post.title %>">Read More</a>
+    </p><% }) %></div>
+    <button id="btn1" ><a href="/compose" style="text-decoration: none;color: white;">
+        <img src="Pictures\editnote.png" >
+        Compose
+    </a></button>
+    
+    <%- include("partials/footer") -%>
+
+
+    
